@@ -1,0 +1,348 @@
+h1{
+    color:brown;
+}
+.navbar-toggler{
+  background-color: rgb(88, 3, 3);
+
+}
+.fa-snowflake{
+  transition: all linear;
+  animation: rot 2s linear infinite;
+  color: #FDFAF6;
+}
+@keyframes rot{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+ 
+
+}
+main{
+    padding: 20px ;
+    display: grid;
+    
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(228px,1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+
+}
+
+.div1{
+    padding: 10px 20px;
+    background-color: rgb(212, 209, 209);
+}
+.div2{
+    padding: 10px 20px;
+    background-color: rgb(17, 231, 124);
+}
+.div3{
+    padding: 10px 20px;
+    background-color: rgb(125, 211, 211);
+}
+.div4{
+    padding: 10px 20px;
+    background-color: rgb(210, 226, 226);
+}
+
+.div5{
+    padding: 10px 20px;
+    background-color: rgb(226, 219, 219);
+}
+
+.div6{
+    padding: 10px 20px;
+    background-color: rgb(223, 217, 217);
+}
+.div7{
+  padding: 10px 20px;
+  background-color: rgb(223, 217, 217);
+}
+
+.div8{
+  padding: 10px 20px;
+  background-color: rgb(223, 217, 217);
+}
+
+
+.div-right{
+    
+}
+section{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit , minmax(245px ,1fr));
+    padding: 20px;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+
+}
+.div-right , .div-left{
+   
+    display: inline;
+  
+    
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .parent{
+    display: block;
+    box-shadow: 0 5px 15px -2px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-left: 10px solid #4285f4;
+    line-height: 1.2rem;
+  }
+  .child{
+    display: flex;
+  }
+  .pic1{
+    width: 50px;
+    height: 50px;
+  }
+  .our-team{
+    padding: 20px ;
+    display: grid;
+    
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(228px,1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+  }
+  .person1{
+    background-color:#FDFAF6;
+  }
+  .person2{
+    background-color:#BFCBA8;
+  }
+  
+  .person3{
+    background-color:#CDF0EA;
+  }
+  .person4{
+    background-color:#BB8082;
+  }
+  .person5{
+    background-color:#F2EDD7;
+  }
+  .person6{
+    background-color:#CDF0EA;
+  }
+  .person7{
+    background-color:#CDF0EA;
+  }
+  .person8{
+    background-color: #C6A9A3;
+  }
+  .person9{
+    background-color: #CDF0EA;
+  }
+  
+  
+
+  body, html {
+    
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 200px;;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); }
+  .img2 { background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); }
+  .img3 { background-image: url("https://apisproductions.com/wp-content/uploads/2020/09/back-1024x585.png"); }
+  .img4 { background-image: url("https://image.shutterstock.com/image-illustration/abstract-futuristic-technology-polygonal-shapes-260nw-1704312499.jpg"); }
+  .img5 { background-image: url("https://i.pinimg.com/originals/7f/e7/74/7fe774bbacce09f00cb5b2e3cbc48db3.png"); }
+  .img6 { background-image: url("https://i.ytimg.com/vi/KFNxdXEe0Ko/maxresdefault.jpg"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /*weather info*/
+  .tempinformation{
+ width: 40rem;
+ margin: auto;
+ height: 80vh;
+ background-color: #238767;
+ border-radius: 1rem;
+ padding: 1rem;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #810a0a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem 0;
+  }
+  .top_layer p{
+    color: bisque;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+    color: rgb(73, 14, 202);
+  }
+  .main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main_layer #cityname{
+    padding: 2rem 0;
+    color: rgb(226, 12, 12);
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(27, 26, 26);
+  }
+  .data_hide{
+visibility: hidden;
+transition: all 0.3s linear;
+  }
+
+.fa{
+  color: #009ad8;
+}
+sup{
+  font-size: 3rem;
+  margin-top: -2rem;
+  top: -5rem;
+}
+
+ .temp_form{
+   width: 60%;
+   position: relative;
+   margin: 10rem auto 6rem;
+   
+ }
+
+
+.temp_form input[type ="text"]{
+  width: 100%;
+  padding: 2rem 5rem 2rem 2rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 3rem;
+}
+::placeholder{
+  color: #bfc18b;
+}
+.temp_form input[type= "submit"]{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background: #009ad8;
+  border-radius: 3rem;
+  padding: 0 3 rem;
+  color: white;
+  font-size: 1.6rem;
+  width: 9rem;
+}
+.temp_form input[type= "submit"]:hover {
+  color: #009ad8;
+  background-color: white;
+}
+.temp_form{
+  width: auto;
+  height:auto;
+  
+}
+.tempinformation{
+  width: auto;
+}
